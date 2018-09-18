@@ -82,7 +82,6 @@
     [[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] getValue:&animationCurve];
     [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
     [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] getValue:&keyboardFrame];
-    
     UIViewAnimationOptions animationOptions = animationCurve << 16;
     self.bottomConstrains.offset = 0;
     [UIView animateWithDuration:animationDuration delay:0. options:animationOptions animations:^{
